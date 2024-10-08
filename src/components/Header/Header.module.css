@@ -1,0 +1,25 @@
+.headerNav {
+  color: #fafafa;
+  background-color: #fafafa;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 90%;
+  height: 80px;
+  inset: 1% 0% auto 0%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px -16px #0003;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.navigation {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  right: 32px;
+}

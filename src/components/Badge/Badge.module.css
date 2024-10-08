@@ -1,0 +1,45 @@
+.badge {
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.top-left {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.top-right {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.bottom-left {
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.bottom-right {
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+/** Colors */
+.default {
+  background-color: #6c757d;
+}
+
+.success {
+  background-color: #28a745;
+}
+
+.error {
+  background-color: #dc3545;
+}
+
+.warning {
+  background-color: #ffc107;
+}
