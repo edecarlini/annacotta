@@ -1,0 +1,21 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-row-start: 3;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-container-image {
+  display: flex;
+  width: 400px;
+  justify-content: flex-start;
+}
+
+.footer-container-social {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-end;
+}

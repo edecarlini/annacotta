@@ -1,18 +1,31 @@
-import ProductsWrapper from '@/components/ProductsWrapper/ProductsWrapper';
+import Products from '@/components/Products/Products';
+import parseTsvToJson from '@/utils/parseTsvToJson';
 import styles from './page.module.css';
-import { getProducts } from '@/services/api.service';
+import Footer from '@/components/Footer/Footer';
 
-export default function Home() {
-  const data = getProducts();
-  console.log('🚀 ~ Home ~ data:', data);
+export default async function Home() {
+  const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
+  const data = await fetch(API_URL)
+    .then((response) => {
+      return response.text();
+    })
+    .then((data) => {
+      const parsedJson = parseTsvToJson(data);
+      return parsedJson;
+    })
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <div className={styles.grid}>
-          <ProductsWrapper products={data} />
-        </div>
-      </main>
-      <footer className={styles.footer}>Footer</footer>
-    </div>
+    <>
+      <div className={styles.page}>
+        <main className={styles.main}>
+          <Products products={data} />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -1,6 +1,6 @@
-import { Product } from '@/components/ProductsWrapper/ProductsWrapper';
+import { Product } from '@/components/Products/Products';
 
-function tsvToJson(tsvString: string): Product[] {
+function parseTsvToJson(tsvString: string): Product[] {
   const lines = tsvString.split('\n');
   const headers = lines[0].split('\t');
 
@@ -22,4 +22,4 @@ function tsvToJson(tsvString: string): Product[] {
   return jsonResult;
 }
 
-export default tsvToJson;
+export default parseTsvToJson;
