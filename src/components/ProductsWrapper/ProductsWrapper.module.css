@@ -1,10 +1,10 @@
-.card {
+.cardImage {
+  position: relative;
   width: 100%;
+  max-height: 160px;
   max-width: 300px;
   border-radius: 12px;
-  padding: 24px;
   overflow: hidden;
-  /* margin: 0 auto; */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #fafafa;
+  margin-bottom: 12px;
 }
