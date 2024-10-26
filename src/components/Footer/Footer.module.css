@@ -4,7 +4,7 @@
   grid-row-start: 3;
   gap: 12px;
   width: 100%;
-  justify-content: space-between;
+  padding: 0 80px;
 }
 
 .footer-container-image {
