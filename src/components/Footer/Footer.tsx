@@ -9,11 +9,19 @@ const Footer = () => {
       </div>
       <div className={styles['footer-container-social']}>
         <h3>Redes sociales</h3>
-        <Link href={'https://wa.me/5492615188639'}>Whatsapp</Link>
-        <Link href={'https://www.instagram.com/annacotta.pasteleria/'}>
+        <Link href={'https://wa.me/5492615188639'} target='blank'>
+          Whatsapp
+        </Link>
+        <Link
+          href={'https://www.instagram.com/annacotta.pasteleria/'}
+          target='blank'
+        >
           Instagram
         </Link>
-        <Link href={'https://www.facebook.com/annacotta.pasteleria/'}>
+        <Link
+          href={'https://www.facebook.com/annacotta.pasteleria/'}
+          target='blank'
+        >
           Facebook
         </Link>
       </div>

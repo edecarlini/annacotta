@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import styles from './Header.module.css';
-import Link from 'next/link';
-import Button from '../Button/Button';
 
 const Header = () => {
   return (
@@ -15,14 +13,14 @@ const Header = () => {
           cursor: 'pointer',
         }}
       />
-      <div className={styles.navigation}>
+      {/* <div className={styles.navigation}>
         <Link href={'#'}>
           <Button>Productos</Button>
         </Link>
         <Link href={'#'}>
           <Button>Contacto</Button>
         </Link>
-      </div>
+      </div> */}
     </header>
   );
 };

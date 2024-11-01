@@ -4,7 +4,9 @@
   grid-row-start: 3;
   gap: 12px;
   width: 100%;
-  padding: 0 80px;
+  padding: 24px 120px;
+  background-color: #ceb2d8;
+  color: #252525;
 }
 
 .footer-container-image {
