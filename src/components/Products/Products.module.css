@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  max-width: 100vw;
+  max-width: 1280px;
   justify-content: center;
 }
 
@@ -23,6 +23,10 @@
   gap: 8px;
 }
 
+.product-card-content-title {
+  font-size: 1.5rem;
+}
+
 .product-card-content-description {
-  font-size: 14px;
+  font-size: 1rem;
 }

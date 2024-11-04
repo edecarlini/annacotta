@@ -1,10 +1,10 @@
-.headerNav {
+.navbar {
   color: #fafafa;
   background-color: rgba(
     255,
     255,
     255,
-    0.5
+    0.1
   ); /* Fondo blanco con algo de transparencia */
   padding: 12px 32px;
   display: flex;
@@ -19,8 +19,8 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
-  backdrop-filter: blur(10px) saturate(180%); /* Efecto de vidrio esmerilado */
-  -webkit-backdrop-filter: blur(10px) saturate(180%); /* Para compatibilidad con Safari */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
 }
 
 .navigation {

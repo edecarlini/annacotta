@@ -1,28 +1,17 @@
-import Products from '@/components/Products/Products';
-import parseTsvToJson from '@/utils/parseTsvToJson';
-import styles from './page.module.css';
 import Footer from '@/components/Footer/Footer';
+import ProductsWrapper from '@/components/ProductsWrapper/ProductsWrapper';
+import api from '@/services/api.service';
+import styles from './page.module.css';
 
 export default async function Home() {
-  const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
-  const data = await fetch(API_URL)
-    .then((response) => {
-      return response.text();
-    })
-    .then((data) => {
-      const parsedJson = parseTsvToJson(data);
-      return parsedJson;
-    })
-    .catch((error) => {
-      console.error(error);
-      return [];
-    });
+  const products = await api.products.fetch();
 
   return (
     <>
       <div className={styles.page}>
         <main className={styles.main}>
-          <Products products={data} />
+          <ProductsWrapper products={products} />
+          {/* <Products products={data} /> */}
         </main>
         <Footer />
       </div>

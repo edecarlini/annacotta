@@ -14,7 +14,8 @@
   padding: 40px 0 0 0;
   gap: 64px;
   font-family: var(--font-geist-sans);
-  background-color: #d3eee0;
+  /* background-color: #c1d9c9; */
+  background-color: #eadfef;
   overflow-x: none;
   overflow-y: scroll;
   height: 100vh;

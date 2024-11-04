@@ -30,6 +30,7 @@ const Products = ({ products }: ProductProps) => {
                 alt={``}
                 width={280}
                 height={170}
+                style={{ objectFit: 'cover' }}
               />
               <Badge
                 text={priceTransformer({ price: price })}
